@@ -1,0 +1,10 @@
+{
+  "name": "aion2-codex-tests",
+  "private": true,
+  "scripts": {
+    "test": "node tests/test_planner.js && node tests/test_classes.js"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}

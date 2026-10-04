@@ -1,0 +1,13 @@
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+# raw data pulled by the tools (player profiles, questlog dumps)
+data/
+cls/
+chars/
+ref/
+icons/
+picons/
+out/

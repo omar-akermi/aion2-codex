@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6fbf6a"/><stop offset=".6" stop-color="#6fbf6a" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity=".2"/></linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2232"/><stop offset="1" stop-color="#0b0e15"/></linearGradient>
+    <radialGradient id="bg" cx=".5" cy=".42" r=".55"><stop offset="0" stop-color="#6fbf6a" stop-opacity=".45"/><stop offset="1" stop-color="#6fbf6a" stop-opacity="0"/></radialGradient>
+    <radialGradient id="orb" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#6fbf6a"/><stop offset="1" stop-color="#10202a"/></radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <ellipse cx="200" cy="230" rx="200" ry="230" fill="url(#bg)"/>
+  <path d="M300 70 C380 160 380 340 300 430" stroke="#8a6a44" stroke-width="10" fill="none" stroke-linecap="round"/>
+      <path d="M300 70 C380 160 380 340 300 430" stroke="url(#rim)" stroke-width="2" fill="none"/>
+      <line x1="300" y1="70" x2="300" y2="430" stroke="#cfd6e4" stroke-width="1.5"/>
+      <line x1="150" y1="250" x2="350" y2="250" stroke="#d9dfe9" stroke-width="3"/><path d="M350 250 L334 242 L334 258 Z" fill="#6fbf6a" filter="url(#glow)"/>
+      <path d="M150 250 L140 240 M150 250 L140 260" stroke="#6fbf6a" stroke-width="3"/>
+  
+  <!-- cloak -->
+  <path d="M200 132 C150 140 118 175 108 240 C96 320 90 400 70 500 L330 500 C312 400 304 320 292 240 C282 175 250 140 200 132 Z" fill="url(#cloth)" stroke="url(#rim)" stroke-width="3"/>
+  <!-- inner cloak fold -->
+  <path d="M200 170 C180 230 176 330 168 500 L232 500 C224 330 220 230 200 170 Z" fill="#0a0d14" opacity=".75"/>
+  <!-- shoulders / pauldrons -->
+  <path d="M138 176 C150 150 178 142 200 142 C222 142 250 150 262 176 C246 186 226 190 200 190 C174 190 154 186 138 176 Z" fill="#141a26" stroke="url(#rim)" stroke-width="3"/>
+  <path d="M124 186 C130 166 146 158 160 160 L166 196 C150 202 134 200 124 186 Z" fill="#1a2232" stroke="url(#rim)" stroke-width="2.5"/>
+  <path d="M276 186 C270 166 254 158 240 160 L234 196 C250 202 266 200 276 186 Z" fill="#1a2232" stroke="url(#rim)" stroke-width="2.5"/>
+  <!-- hood + face shadow -->
+  <path d="M200 58 C168 58 152 86 154 116 C156 136 170 150 200 152 C230 150 244 136 246 116 C248 86 232 58 200 58 Z" fill="url(#cloth)" stroke="url(#rim)" stroke-width="3"/>
+  <path d="M200 84 C180 86 172 104 174 120 C176 134 186 142 200 143 C214 142 224 134 226 120 C228 104 220 86 200 84 Z" fill="#05070b"/>
+  <!-- eyes -->
+  <circle cx="190" cy="118" r="2.6" fill="#6fbf6a" filter="url(#glow)"/><circle cx="210" cy="118" r="2.6" fill="#6fbf6a" filter="url(#glow)"/>
+  <!-- belt emblem -->
+  <path d="M200 262 L212 276 L200 290 L188 276 Z" fill="#6fbf6a" opacity=".85" filter="url(#glow)"/>
+
+  
+</svg>
